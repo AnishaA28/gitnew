@@ -169,6 +169,11 @@ def index() -> rx.Component:
         
                            
 ),       
+def about_page():
+    return rx.div(
+        rx.h1("About Us"),
+        rx.p("This is an about page for your app."),
+    )
 
             
        
@@ -180,3 +185,4 @@ def index() -> rx.Component:
 
 app = rx.App()
 app.add_page(index)
+app.add_page("/about", about_page)
